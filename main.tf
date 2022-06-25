@@ -6,6 +6,7 @@ resource "aws_instance" example {
       "Name" = "example"
     }
 
+    key_name = "sitti.key"
     user_data = <<EOF
         #!/bin/bash
         yum install -y httpd
